@@ -1,0 +1,17 @@
+$headercolor : #908d85;
+
+header {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: $headercolor;
+}
+#jhlogo{
+    height: 3em;
+}
+@media (min-width: 415px){
+    header{
+        display: flex;
+    }
+}
