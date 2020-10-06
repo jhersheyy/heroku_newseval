@@ -17,9 +17,11 @@ app.use(bodyParser.urlencoded({
 extended: true}))
 app.use(bodyParser.json());
 app.use(express.static('dist'))
+const PORT = process.env.PORT || 8081;
+const host = process.env.HOST || '0.0.0.0'|| 'localhost' ;
 
 // designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
+app.listen(PORT, host, function () {
     console.log('JH NLP Web Tool: listening on port 8081!')
 })
 
