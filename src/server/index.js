@@ -26,7 +26,8 @@ app.listen(PORT, host, function () {
 })
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
+    // res.sendFile('dist/index.html')
+    res.sendFile(path.join(__dirname, '../public', 'index.html'))
 })
 
 // Post Route
