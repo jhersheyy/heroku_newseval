@@ -17,6 +17,7 @@ async function handleSubmit(event) {
         //relay data from server side:
         .then(res => {
             let post_res = res.json();
+            console.log("URL RETRIEVED: ",post_res);
             return post_res
         })
         //handle promise error 
