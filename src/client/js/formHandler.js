@@ -5,7 +5,7 @@ async function handleSubmit(event) {
     if( Client.checkURL(formText)){
         //only continue IF valid url
         //send url to server side thru post endpt:
-        const response = await fetch('http://localhost:8081/testpost', {
+        const response = await fetch('/testpost', {
             method: 'POST', 
             credentials: 'same-origin',
             mode: 'cors', 
