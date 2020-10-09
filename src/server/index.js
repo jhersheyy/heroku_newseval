@@ -10,7 +10,7 @@ let input_url = [];
 const app = express();
 const baseURL='https://api.meaningcloud.com/sentiment-2.1?key=';
 const querySettings = '&lang=en&url=';
-const key = fcba8eb3a31e8d61280799a80d4ba9ee;
+const key = 'fcba8eb3a31e8d61280799a80d4ba9ee';
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
