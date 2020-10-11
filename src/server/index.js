@@ -27,7 +27,11 @@ app.listen(PORT, host, function () {
 
 app.get('/', function (req, res) {
     // res.sendFile('dist/index.html')
-    res.sendFile(path.join(__dirname, '../public', 'index.html'))
+    try{
+        res.sendFile(path.join(__dirname, '../public', 'index.html'))
+    } catch{
+        res.sendFile('dist/index.html')
+    }
 })
 
 // Post Route
