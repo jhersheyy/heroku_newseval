@@ -43,19 +43,38 @@
                 <h2 class="prettytext">~About Sentiment Analysis & Natural Language Processing~</h2>
                 <h3>Sentiment Analysis</h3>
                 <article>
-                woooo yee haw haw yee namsayin lessgo . when the night is dark, aand the outsides so cold.. *heroes on fireeee*** as a child i knew, boutta world so true. she pulled the down stars. i needed a hero, if i only knew the hero was me. fear pulled me down, reckless and hot. tells me im nothing, when i know that im not.
                 <p>
                     Sentiment Analysis uses Natural Language Processing (see below) to find 
                     the overall feeling in a block of text, such as a blog post, tweet,
                     yelp review,etc. Sentiment analysis is also known as opinion mining or
                     emotion AI. A basic example is to determine the overall polarity of a text, 
-                    whether it is more positive or negative. While there are various methods to
-                    perform sentiment analysis, most of them involve breaking the text to be
+                    whether it is more positive or negative, or if it's neutral. 
+                </p>
+                <p>
+                    While there are various methods to perform sentiment analysis, 
+                    most of them involve breaking the text to be
                     analyzed into smaller chunks like sentences or phrases. These smaller chunks 
                     are then analyzed and scored consistently, so the overall text is just the 
                     scores of the smaller chunks combined. For example, if a text has 3 phrases, 
                     and 2 are positive, but 1 is negative, then the text will be positive overall.
-
+                </p>
+                <p>
+                    Here's a more general example looking at whole sentences instead of the 
+                    parts making up a sentence:
+                    <ol>
+                        <li> I really like their new album.</li>
+                        <li> I'm not sure if I like their new album.</li>
+                        <li> Their new album is terrible.</li>
+                    </ol>
+                    This example portrays a few aspects that sentiment analysis takes into account
+                    when processing texts. Although sentences 1 & 2 have similar words, sentence 2 
+                    uses <strong>negation</strong> with "not sure" whereas sentence 1 uses a 
+                    <strong>simple statement </strong> "I like their new album" but with a 
+                    <strong>modifier</strong> to exaggerate the positive feeling. Sentence 3 is also
+                    a simple statement, but in the negative direction. Taking this into account, 
+                    sentence 1 will be classified as positive, and sentence 3 will be negative.
+                    On the other hand, sentence 2 would be classified as neutral since there's no
+                    real positive or negative emotion in it.
                 </p>
                 </article>
                 <h3>Natural Language Processing</h3>
