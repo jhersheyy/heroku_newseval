@@ -103,36 +103,72 @@
                 </article>
                 <h3>Meaningcloud</h3>
                 <article>
+                    https://www.meaningcloud.com
                     <p>
-                        Meaningcloud has various API's available for developers to use. 
-                        Meaningcloud mainly works on NLP, so blah blah blah blah i d k yo.
+                        MeaningCloud is a Software as a Service product that specializes 
+                        in text analysis. MeaningCloud offers various API's for developers 
+                        to use. We used the API for sentiment analysis, but they also have 
+                        API's for text classification, language identification, and 
+                        summariziation (these are simply what they sound like, 
+                        just so you know =] ) as well as many others.
                     </p>
                     <p>
-                        In the API used for main function for this app, the developers included
-                         various measures in the results. The most basic is polarity, but the API
-                          also analyzes how ironic the text is, gives it a score, determines if 
-                          the sentiments agree overall, and if the text given is objective or 
-                          subjective.
+                        https://www.meaningcloud.com/developer/sentiment-analysis
+                        MeaningCloud's Sentiment Analysis API can be used on a chunk of 
+                        text, like the news articles used for this app, and even on the 
+                        individual sentences making up the text. The API accepts a string 
+                        of text, a url, or a selected document or file with analysis-friendly 
+                        contents as valid queries. However, this app only supports the use of 
+                        url's.
                     </p>
+                    <p>
+                        In the API used for main function for this app, the developers 
+                        included various measures in the results. The most basic is polarity, 
+                        but the API also analyzes how ironic the text is, gives it a 
+                        confidence score, determines if the sentiments agree overall, 
+                        and if the text given is objective or  subjective.
+                    </p>
+                    Here are the analysis terms we use with their possible results: 
+                    score_tag, agreement, subjectivity, irony, confidence
+
+                    <ul>
+                        <li>score: overall polarity (strong positive, positive, 
+                            neutral, negative, strong negative, no sentiment)
+                        </li>
+                        <li>agreement: whether polarities in each sentence/segment 
+                            agree in polarity (agreement/disagreement)
+                        </li>
+                        <li>subjectivity: whether overall text has any opinion or has 
+                            fact only (subjective/objective)
+                        </li>
+                        <li>irony: whether text contains any irony (ironic/nonironic)
+                        </li>
+                        <li>confidence: level of confidence regarding analysis 
+                            performed (0-100)
+                        </li>
+                    </ul>
                 </article>
             </section>
-            <section>
-                <h2 class="prettytext">~Sample Articles~</h2>
-            <article>
-                <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a>
-            </article>
-            <article>
-                <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a>
-            </article>
-            <article>
-                <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>            
-            </article>
-        
+
         <footer>
-            <img id= "testimg" alt="Test articles:" class="logopic">
-            <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a>
-            <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a>
-            <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>            
+            <h2 class="prettytext">~Sample Articles~</h2>
+            <div class="newscard">
+                Covid Resurgence
+                <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a>
+            </div>
+            <div class="newscard">
+                Mass Shooting
+                <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a>
+            </div>
+            <div class="newscard">
+                Star Trek Actor
+                <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>            
+            </div>
+        
+            <!-- <img id= "testimg" alt="Test articles:" class="logopic"> -->
+            <!-- <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a> -->
+            <!-- <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a> -->
+            <!-- <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>             -->
         </footer>
         <script>
             // Check that service workers are supported
