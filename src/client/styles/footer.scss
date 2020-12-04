@@ -1,22 +1,6 @@
 $footercolor: #908d85;
 footer{
-    text-align: justify; 
-}
-.cardholder{
-    display: flex;
-    justify-content: space-between;
-}
-.logopic{
-    height: 2em;
-    width: auto;
-    margin: 5px 10px 5px 10px;
-    padding: 2px;
-}
-.newscard{
-    text-align:center;
-    display: block;
-    width: 25vw;
     background-color: $footercolor;
-    border: 2px white solid;
-    padding: 10px;
+    text-align: right;
+    
 }

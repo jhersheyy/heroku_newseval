@@ -18,11 +18,28 @@
 
         <main>
             <section>
+                <h2 class="prettytext">How to Use this Web App:</h2>
+                <p>
+                    To use this web app, simply insert any URL into the field bar below and 
+                    click the submit button.
+                    If the URL is invalid or does not have any content that can be analyzed,
+                    a pop up will appear to inform you of the issue. A pop up will also appear
+                    if the URL is valid to let you know when your results are ready to display.
+                    (This is so that you can tell when the analysis statistics change between
+                    articles.) 
+                </p>
+                <p>There are three sample articles below, each giving different 
+                    results, for you to test as well. To do so, right click on the news logo 
+                    and use the "Copy Link Adress" option in the menu to get the article's url.
+                    Then paste that url into the search bar.
+                </p>
+            </section>
+            <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="url" type="text" name="input" value="" placeholder="insert url here">
                     <input type="submit" id = "submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
-            <section>
+            </section>
 
             <section class = "entry">
                 <strong class = "prettytext analysis">*~Article Analysis~*</strong>
@@ -38,7 +55,23 @@
                 <div id="results"></div>
                -->
             </section>
-
+            <section id="samples">
+                <h2 class="prettytext">~Sample Articles~</h2>
+                <div class="cardholder">
+                    <div class="newscard">
+                        Covid Resurgence
+                        <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a>
+                    </div>
+                    <div class="newscard">
+                        Mass Shooting
+                        <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a>
+                    </div>
+                    <div class="newscard">
+                        Star Trek Actor
+                        <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>            
+                    </div>
+                </div>
+            </section>
             <section>
                 <h2 class="prettytext">~About Sentiment Analysis & Natural Language Processing~</h2>
                 <h3>Sentiment Analysis</h3>
@@ -149,24 +182,9 @@
                     </ul>
                 </article>
             </section>
-
+        </main>
         <footer>
-            <h2 class="prettytext">~Sample Articles~</h2>
-            <div class="cardholder">
-                <div class="newscard">
-                    Covid Resurgence
-                    <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a>
-                </div>
-                <div class="newscard">
-                    Mass Shooting
-                    <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a>
-                </div>
-                <div class="newscard">
-                    Star Trek Actor
-                    <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>            
-                </div>
-            </div>
-        
+            done by julia h. for more check here: juliahershey.com =) thank you!
             <!-- <img id= "testimg" alt="Test articles:" class="logopic"> -->
             <!-- <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a> -->
             <!-- <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a> -->

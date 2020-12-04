@@ -1,6 +1,6 @@
 $maincolor : #d2c3a7;   
 $formcolor: #876a6c;
-
+$footercolor: #908d85;
 
 body {
     display: flex;
@@ -11,21 +11,23 @@ body {
 main {
     flex: 2;
     background-color: $maincolor;
-
 }
 
 h1,h2,h3,h4,h5,h6{
     color: $formcolor;
 }
+
 section {
     max-width: 800px;
     margin: 50px auto;
     color: darkslategray;
 }
+
 .analysis{
     padding-bottom: 3px;
     border-bottom: 2px ridge white;
 }
+
 .prettytext{
     color: white;
     text-shadow: 2px 2px 1px #3d3c38;
@@ -33,10 +35,38 @@ section {
     font-size: 1.5em;
     padding-top: 10px;
 }
+
 .entry{
     padding:10px;
 }
+
+.cardholder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logopic{
+    height: 2em;
+    width: auto;
+    margin: 5px 10px 5px 10px;
+    padding: 2px;
+}
+
+.newscard{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: $footercolor;
+    border: 2px white solid;
+    padding: 10px;
+}
+
 #entryHolder{
     margin-top:5px;
     padding: 15px;
 }
+#samples{
+    text-align: justify;
+}
+
