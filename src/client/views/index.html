@@ -14,10 +14,14 @@
             <div class="prettytext">
                 JH NLP Web Tool
             </div>
+            <nav class="navbar__menu">
+                <!-- Navigation starts as empty UL that will be populated with JS -->
+                <ul id="navbar__list"></ul>
+              </nav>
         </header>
 
         <main>
-            <section>
+            <section id="section1" data-nav="Section 1">
                 <h2 class="prettytext">How to Use this Web App:</h2>
                 <p>
                     To use this web app, simply insert any URL into the field bar below and 
@@ -34,14 +38,14 @@
                     Then paste that url into the search bar.
                 </p>
             </section>
-            <section>
+            <section id="section2" data-nav="Section 2">
                 <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="url" type="text" name="input" value="" placeholder="insert url here">
                     <input type="submit" id = "submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             </section>
 
-            <section class = "entry">
+            <section id="section3" data-nav="Section 3" class = "entry">
                 <strong class = "prettytext analysis">*~Article Analysis~*</strong>
                 <div id = "entryHolder">
                     <div id = "score"></div> 
@@ -55,7 +59,7 @@
                 <div id="results"></div>
                -->
             </section>
-            <section id="samples">
+            <section id="samples" data-nav="Section 3">
                 <h2 class="prettytext">~Sample Articles~</h2>
                 <div class="cardholder">
                     <div class="newscard">
@@ -72,7 +76,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="section4" data-nav="Section 4">
                 <h2 class="prettytext">~About Sentiment Analysis & Natural Language Processing~</h2>
                 <h3>Sentiment Analysis</h3>
                 <article>
