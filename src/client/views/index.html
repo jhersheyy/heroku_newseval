@@ -14,14 +14,14 @@
             <div class="prettytext">
                 JH NLP Web Tool
             </div>
-            <nav class="navbar__menu">
-                <!-- Navigation starts as empty UL that will be populated with JS -->
-                <ul id="navbar__list"></ul>
-              </nav>
-        </header>
 
+        </header>
+        <nav class="navbar__menu">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <ul id="navbar__list"></ul>
+        </nav>
         <main>
-            <section id="section1" data-nav="Section 1">
+            <section id="howto" data-nav="[How To]">
                 <h2 class="prettytext">How to Use this Web App:</h2>
                 <p>
                     To use this web app, simply insert any URL into the field bar below and 
@@ -32,20 +32,20 @@
                     (This is so that you can tell when the analysis statistics change between
                     articles.) 
                 </p>
-                <p>There are three sample articles below, each giving different 
+                <p class="mini">Note: There are three sample articles below, each giving different 
                     results, for you to test as well. To do so, right click on the news logo 
                     and use the "Copy Link Adress" option in the menu to get the article's url.
                     Then paste that url into the search bar.
                 </p>
             </section>
-            <section id="section2" data-nav="Section 2">
+            <section id="mainapp" data-nav="[The App]">
                 <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="url" type="text" name="input" value="" placeholder="insert url here">
                     <input type="submit" id = "submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             </section>
 
-            <section id="section3" data-nav="Section 3" class = "entry">
+            <section id="results" data-nav="[Analysis]" class = "entry">
                 <strong class = "prettytext analysis">*~Article Analysis~*</strong>
                 <div id = "entryHolder">
                     <div id = "score"></div> 
@@ -54,29 +54,28 @@
                     <div id = "irony"></div>
                     <div id = "confidence"></div>
                 </div>
-               <!--previous html/form results:
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-               -->
             </section>
-            <section id="samples" data-nav="Section 3">
+            <section id="samples" data-nav="[Sample Articles]">
                 <h2 class="prettytext">~Sample Articles~</h2>
                 <div class="cardholder">
                     <div class="newscard">
-                        Covid Resurgence
+                        "US hits 150,000 deaths from COVID-19 as states struggle to halt resurgence"
+                        Jul. 30, 2020
                         <a href="https://www.usatoday.com/story/news/nation/2020/07/29/covid-resurgence-deaths-surpass-150-k/5489494002/" target="_blank"><img id= "nlogo1" alt="usa today icon" class="logopic"></a>
                     </div>
                     <div class="newscard">
-                        Mass Shooting
+                        "Police release horrific details of the 1st mass shooting of the year, identify teen suspect"
+                        Jan. 23, 2020
                         <a href="https://abcnews.go.com/US/police-release-horrific-details-1st-mass-shooting-year/story?id=68483893" target="_blank"><img id = "nlogo2" alt="abc news icon" class="logopic"></a>
                     </div>
                     <div class="newscard">
-                        Star Trek Actor
+                        "'Star Trek: Discovery': Adil Hussain Teases Guest Appearance In Season 3, Fans Are Loving It!"
+                        Jul. 28, 2020
                         <a href="https://in.mashable.com/entertainment/15977/star-trek-discovery-adil-hussain-teases-guest-appearance-in-season-3-fans-are-loving-it" target="_blank"><img id="nlogo3" alt="mashable icon" class="logopic"></a>            
                     </div>
                 </div>
             </section>
-            <section id="section4" data-nav="Section 4">
+            <section id="info" data-nav="[About]">
                 <h2 class="prettytext">~About Sentiment Analysis & Natural Language Processing~</h2>
                 <h3>Sentiment Analysis</h3>
                 <article>
