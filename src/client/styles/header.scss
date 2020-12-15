@@ -11,21 +11,21 @@ header {
 
 #navbar__list {
     width:100%;
+    background-color: $maincolor;
+    position: sticky;
+    display: block;
+    font-size: 0.8em;
 }
 
 .navbar__menu .menu__link {
     width:100%;
-    background-color: $maincolor;
-    display: block;
+    font-size: 0.8em;
     justify-content: space-evenly;
     // border: white 3px solid;
     margin-top:20px;
     padding: 1em;
-    // font-weight: bold;
-    font-size: 0.8em;
     text-decoration: none;
     color: #000;
-    position: sticky;
 }
 @media (min-width: 425px){
     .navbar__menu .menu__link {
