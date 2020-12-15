@@ -1,5 +1,6 @@
 $headercolor : #908d85;
 $maincolor : #d2c3a7;   
+$formcolor: #876a6c;
 
 header {
     display: block;
@@ -9,13 +10,21 @@ header {
     background-color: $headercolor;
 }
 
+#sticky{
+    position: fixed;
+}
+
 #navbar__list {
     width:100%;
-    background-color: $maincolor;
-    position: sticky;
+    padding: 15px;
+    margin: 10px;
+    // margin: 0px;
+    // padding: 13px 40px 13px 40px;
+    background-color: $formcolor;
     display: block;
     font-size: 0.8em;
 }
+
 
 .navbar__menu .menu__link {
     width:100%;
