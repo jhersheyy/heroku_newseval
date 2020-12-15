@@ -67,26 +67,6 @@ p{
     padding: 10px;
 }
 
-.navbar__menu .menu__link {
-    background-color: $maincolor;
-    display: block;
-    justify-content: space-evenly;
-    // border: white 3px solid;
-    margin-top:20px;
-    padding: 1em;
-    // font-weight: bold;
-    font-size: 0.8em;
-    text-decoration: none;
-    color: #000;
-    position: sticky;
-}
-@media (min-width: 425px){
-    .navbar__menu .menu__link {
-        display: inline;
-        font-size: 1em;
-    }
-}
-
 .mini{
     font-size: 0.75em;
 }
