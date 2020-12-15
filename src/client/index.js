@@ -133,4 +133,4 @@ fillNavBar();
 //navBar.addEventListener('click', scrollToSection(e)); ?????
 
 // Set sections as active
-document.addEventListener('scroll', activateViewed);
+// document.addEventListener('scroll', activateViewed);
