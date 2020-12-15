@@ -1,6 +1,7 @@
 $maincolor : #d2c3a7;   
 $formcolor: #876a6c;
 $footercolor: #908d85;
+$buttoncolor : #8ca8b0;
 
 body {
     display: flex;
@@ -27,6 +28,11 @@ section {
 p{
     margin: 20px 15px 30px 15px;
 }
+
+a{
+    color: $buttoncolor;
+}
+
 .analysis{
     padding-bottom: 3px;
     border-bottom: 2px ridge white;
