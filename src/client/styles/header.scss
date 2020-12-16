@@ -5,7 +5,7 @@ $formcolor: #876a6c;
 header {
     display: block;
     width: 100%;
-    text-align: center;
+    // text-align: center;
     justify-content: space-between;
     padding: 10px 40px;
     background-color: $headercolor;
@@ -15,16 +15,13 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    margin-bottom: 20px;
-    background-color: $maincolor;
+    background-color: darkslategray;
 }
 
 #navbar__list {
-    width:100%;
-    padding: 15px;
+    // width:100%;
+    padding: 15px 0px 15px 0px;
     margin: 10px;
-    // margin: 0px;
-    // padding: 13px 40px 13px 40px;
     background-color: $formcolor;
     display: block;
     font-size: 0.8em;
