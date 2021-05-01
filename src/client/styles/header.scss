@@ -22,11 +22,12 @@ header {
 
 #navbar__list {
     // width:100%;
-    padding: 15px 0px 15px 0px;
-    margin: 10px;
     background-color: $formcolor;
-    display: block;
-    font-size: 0.8em;
+    padding: 15px 0;
+    margin: 10px;
+    display: inline-block;
+    /* width: 115px; */
+    font-size: .8em;
 }
 
 .navbar__menu .menu__link {
@@ -34,10 +35,12 @@ header {
     font-size: 0.8em;
     justify-content: space-evenly;
     // border: white 3px solid;
-    margin-top:20px;
+    margin:20px 10px;
     padding: 1em;
     text-decoration: none;
     color: #000;
+    background-color: #8ca8b0;
+    border: 1px white solid;
 }
 @media (min-width: 425px){
     .navbar__menu .menu__link {
